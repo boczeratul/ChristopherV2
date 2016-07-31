@@ -7,8 +7,10 @@ var RESERVATION_DATE = '2016-07-17';
 var RESERVATION_TIME = '19:00';
 
 // Setup environment
+var reservationStartTime = 4 - (new Date().getTimezoneOffset() / 60); // 12pm in Taiwan
+
 function waitUntilNoon() {
-    if (Date.now().getHours() >= 11) {
+    if (Date.now().getHours() >= reservationStartTime) {
         christopherSays('It\'s time!');
         $('#submit-btn').click();
     } else {
