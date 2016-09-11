@@ -1,9 +1,9 @@
 // Configuations
-var RESERVATION_NAME = "李玄";
-var RESERVATION_EMAIL = "hsuan.lee@agoda.com";
-var RESERVATION_PHONE = "+886939686300";
+var RESERVATION_NAME = "姓名";
+var RESERVATION_EMAIL = "a@b.com";
+var RESERVATION_PHONE = "+886911111111";
 var RESERVATION_PEOPLE = "2";
-var RESERVATION_DATE = "2016-09-24";
+var RESERVATION_DATE = "2020-10-20";
 var RESERVATION_TIME = "12:00";
 
 // Setup environment
