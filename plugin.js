@@ -40,21 +40,6 @@ function sendRequest() {
     var requestBody = {
         "access_token": "",
         "restaurant_id": "2128",
-        "datetime": RESERVATION_DATE + " " + RESERVATION_TIME + ":00",
-        "people": RESERVATION_PEOPLE,
-        "email": RESERVATION_EMAIL,
-        "name": RESERVATION_NAME,
-        "tel": RESERVATION_PHONE,
-        "gender": "F",
-        "receive": 1,
-        "source": "PARTNER_1952",
-        "share_partner_id": "2",
-        "phone_country_code": "tw",
-        "locale": "zh_TW"
-    }
-    var requestBody2 = {
-        "access_token": "",
-        "restaurant_id": "2128",
         "datetime": RESERVATION_DATE + " " + RESERVATION_TIME,
         "people": RESERVATION_PEOPLE,
         "email": RESERVATION_EMAIL,
@@ -79,17 +64,6 @@ function sendRequest() {
             if (textStatus === "error" && retries--) {
                 setTimeout(sendRequest, 500)
             }
-        }
-    });
-    $.ajax({
-        type: "POST",
-        cache: false,
-        url: "https://api.eztable.com/v3/reservations/",
-        data: requestBody2,
-        complete: function (req, textStatus) {
-            christopherSays([
-                textStatus
-            ]);
         }
     });
 }
