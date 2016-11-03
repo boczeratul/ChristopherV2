@@ -1,4 +1,4 @@
-// Configuations
+// Configuations test test
 var RESERVATION_NAME = "姓名";
 var RESERVATION_EMAIL = "a@b.com";
 var RESERVATION_PHONE = "+886911111111";
